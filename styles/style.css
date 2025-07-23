@@ -1,0 +1,70 @@
+body{
+  font-family: "Noto Serif", serif;
+  /* background-color: rgba(61, 172, 254, 1.00); */
+  }
+
+  .inter-font{
+    font-family: "Inter", sans-serif;
+  }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header part (navbar+banner) */
+.header{
+  max-width: 1280px;
+}
+.navbar{
+  max-width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  max-width: 135px;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+.nav-links li:nth-child(1){
+  font-weight: bold;
+  color: #252432;
+}
+.nav-links li:nth-child(2),
+.nav-links li:nth-child(3){
+  color: #8987A1;
+}
+.banner{
+  max-width: 80%;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.banner-content{
+  max-width: 50%;
+}
+.banner-content h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.banner-content span{
+  color: #E95A08;
+}
+.banner-content p{
+  font-size: 1.10rem;
+  color: rgba(0, 0, 0, 0.50);
+  max-height: 107px;
+  margin-top: 13px;
+}
+
+/* main part  */
+
+.plant-cards{
+  max-width: 80%;
+  margin: 0 auto;
+}
