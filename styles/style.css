@@ -12,7 +12,7 @@ body{
   padding: 0;
 }
 /* header part (navbar+banner) */
-.header{
+.conteiner{
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -31,12 +31,16 @@ body{
   list-style: none;
   gap: 48px;
 }
-.nav-links li:nth-child(1){
+.nav-links a{
+  text-decoration: none;
+}
+.nav-links a:nth-child(1),
+.nav-links a:nth-child(4){
   font-weight: bold;
   color: #252432;
 }
-.nav-links li:nth-child(2),
-.nav-links li:nth-child(3){
+.nav-links a:nth-child(2),
+.nav-links a:nth-child(3){
   color: #8987A1;
 }
 .banner{
@@ -45,6 +49,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: end;
+  
 }
 .banner-content{
   max-width: 50%;
@@ -62,6 +67,7 @@ body{
   max-height: 107px;
   margin-top: 13px;
 }
+
 
 /* main part  */
 
