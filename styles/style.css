@@ -68,3 +68,37 @@ body{
   max-width: 80%;
   margin: 0 auto;
 }
+.card-details{
+  /* text-align: center; */
+text-align: center;
+}
+.plant-card-title{
+  font-size: 3rem;
+  font-weight: bold;
+ 
+}
+.plant-card-title span{
+  color: #E95A08;
+}
+.plant-card-subtitle{
+  font-size: 1.10rem;
+  color: #8987A1;
+  max-width: 888px;
+  /* margin-top: 16px; */
+  margin: 16px auto 0;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.card img{
+  max-width: 270px;
+  max-height: 320px;
+}
+.card-name{
+  font-size: 1.3rem;
+  color: #111111;
+}
