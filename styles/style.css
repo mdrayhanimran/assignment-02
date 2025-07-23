@@ -101,4 +101,21 @@ text-align: center;
 .card-name{
   font-size: 1.3rem;
   color: #111111;
+  font-weight: 600;
+  max-width: 130px;
+  margin: 30px auto 0;
+}
+.card-price{
+  font-size: 1.3rem;
+  color: #111111;
+  font-weight: bold;
+  max-width: 81px;
+  margin: 20px auto 0;
+}
+.card button{
+   margin-top: 30px;
+  background-color: #E95A08;
+  border: none;
+  color: #FFFFFF;
+  padding: 19px 85px;
 }
