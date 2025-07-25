@@ -43,13 +43,39 @@ body{
 .nav-links a:nth-child(3){
   color: #8987A1;
 }
+.nav-links a:nth-child(1):hover{
+  color: #bd4702;
+}
+.nav-links a:nth-child(2):hover{
+  color: #e95a08a4;
+}
+.nav-links a:nth-child(3):hover{
+  color: #e95a08a4;
+}
+.nav-links a:nth-child(4):hover{
+  color: #bd4702;
+}
 .banner{
   max-width: 80%;
   margin: 120px auto;
   display: flex;
   justify-content: space-between;
   align-items: end;
+  animation: banner-animation 1s forwards; 
 }
+@keyframes banner-animation {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
 .banner-content{
   max-width: 50%;
 }
@@ -124,6 +150,11 @@ text-align: center;
   border: none;
   color: #FFFFFF;
   padding: 19px 85px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.card button:hover{
+  background-color: #bd4702;
 }
 .flower-lover{
   max-width: 80%;
@@ -148,9 +179,17 @@ text-align: center;
   top: -100px;
   left: 300px;
   z-index: 10;
-  
+  animation: spin 15s linear infinite; 
 }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
 
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .flower-lover-right{
   max-width: 47%;
@@ -274,6 +313,9 @@ width: 100%;
   text-align: center;
   margin-bottom: 30px;
 }
+.collage h3:hover{
+  color: #E95A08;
+}
 
 /* footer part start */
 
@@ -321,8 +363,8 @@ width: 100%;
   color: white;
   border: none;
   font-weight: bold;
-  cursor: pointer;
   font-size: 1rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -359,71 +401,15 @@ width: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.footer-link li:hover{
+  color: #E95A08;
+}
 .footer-social img{
 margin-left: 20px;
 }
 
-/* @media screen and (max-width: 576px) { */
-  /* .nav-item{
-    display: none;
-  }
-  .banner{
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: left;
-    gap: 30px;
-    margin: 16px;
-  }
-  .banner-content{
-    max-width: 100%;
-  }
-  
-  .banner h1{
-    font-size: 1.5rem;
-    max-width: 200px;
-  }
-  .banner p>br{
-    display: none;
-  }
-  .banner p{
-    max-width: 360px;
-  }
-  .banner-image img{
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  /* .card-details h1{
-    font-size: 1.5rem;
-    margin-top: 65px;
-  }
-  .cards{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card img{
-    max-width: 170px;
-  }
-  .card button{
-    padding: 19px 40px;
-  }
-  .flower-lover{
-    flex-direction: column;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-  .flower-lover-left img{
-    max-width: 570px;
-    margin-left: auto;
-    margin-right: auto;
 
-  }
-  .trusted-badge img{
-    display: none;
-  }
-  .flower-lover-right h1{
-    font-size: 1rem;
-    max-width: 100%;
-    /* text-align: left;
-     */
+
 
 @media screen and (max-width: 576px) {
 
